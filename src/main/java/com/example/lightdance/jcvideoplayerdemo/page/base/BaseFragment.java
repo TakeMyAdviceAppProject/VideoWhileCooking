@@ -20,7 +20,6 @@ public class BaseFragment extends Fragment {
      * @param level 默认为TOAST
      */
     public void showMessage(String message , MessageLevel level){
-        level = MessageLevel.TOAST;
         switch (level){
             case TOAST:
                 Toast.makeText(getActivity() , message , Toast.LENGTH_SHORT).show();

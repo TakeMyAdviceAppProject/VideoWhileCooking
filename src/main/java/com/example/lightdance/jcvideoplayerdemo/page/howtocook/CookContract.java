@@ -11,7 +11,7 @@ import com.example.lightdance.jcvideoplayerdemo.page.base.BaseView;
  */
 
 class CookContract {
-    interface Presenter extends BasePresenterInterface{
+    interface Presenter extends BasePresenterInterface {
         /**
          * 获取视频&图片资源
          */
@@ -23,15 +23,19 @@ class CookContract {
         void getCookingSteps();
     }
 
-    interface View extends BaseView<Presenter>{
+    interface View extends BaseView<Presenter> {
         /**
          * 显示播放器控件
+         *
+         * @param videoUri 视频uri
+         * @param imgUri   图片uri
          */
-        void showVideoPlayer();
+        void showVideoPlayer(String videoUri, String imgUri);
 
         /**
          * 显示操作步骤
+         * @param steps 做菜步骤描述
          */
-        void showCookingSteps();
+        void showCookingSteps(String[] steps);
     }
 }

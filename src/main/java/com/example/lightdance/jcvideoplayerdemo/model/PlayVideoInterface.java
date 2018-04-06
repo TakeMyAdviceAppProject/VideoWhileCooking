@@ -12,12 +12,12 @@ import com.example.lightdance.jcvideoplayerdemo.app.AppError;
 public interface PlayVideoInterface {
     interface GetUrlListener {
         /**
-         * 操作成功，对url进行处理
+         * 操作成功，对uri进行处理
          *
-         * @param imgUrl   图片地址
-         * @param videoUrl 视频地址
+         * @param imgUri   图片地址
+         * @param videoUri 视频地址
          */
-        void onSuccess(String imgUrl, String videoUrl);
+        void onSuccess(String imgUri, String videoUri);
 
         /**
          * 操作失败,提示用户为啥
